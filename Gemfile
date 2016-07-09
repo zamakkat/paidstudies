@@ -4,12 +4,15 @@ ruby '2.3.1'
 
 gem 'rails', '~> 5.0.0'
 
-# Database & server
+# Server & Database
 gem 'pg'
 gem 'puma'
 
 # Front-end
+gem 'slim-rails'
 gem 'sass-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
