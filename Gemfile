@@ -22,7 +22,6 @@ end
 
 group :development do
   gem 'web-console'
-  gem 'better_errors'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
