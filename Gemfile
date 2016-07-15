@@ -20,6 +20,7 @@ gem 'turbolinks'
 
 # Back-end
 gem 'devise'
+gem 'pundit'
 
 group :development, :test do
   gem 'byebug', platform: :mri
