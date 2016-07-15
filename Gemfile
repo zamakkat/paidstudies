@@ -18,6 +18,9 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 
+# Back-end
+gem 'devise'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'

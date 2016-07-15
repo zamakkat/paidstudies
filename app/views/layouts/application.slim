@@ -3,13 +3,50 @@ html
   head
     title
       | PaidStudies.me
-    = csrf_meta_tags
-    = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Fanwood+Text|Quattrocento', media: 'all', 'data-turbolinks-track': 'reload'
 
+    meta charset='utf-8'
+    meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1'
+    meta name='viewport' content='width=device-width, initial-scale=1.0'
+
+    = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Fanwood+Text|Quattrocento', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
+    = csrf_meta_tags
+
   body
-    = yield
+    nav.navbar.navbar-inverse.navbar-fixed-top role='navigation'
+      .container
+        .navbar-header
+          button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a class='navbar-brand' href='#' Start Bootstrap
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a href='#' About
+            li
+              a href='#' Services
+            li
+              a href='#' Contact
+
+    / header
+    /   .container
+    /     .row
+    /       .col-xs-12
+
+    .container
+      = yield
+
+    / = flash_messages
+
+    footer
+      .row
+        .col-xs-12
+          p Copyright © PaidStudies 2016
 
     = render 'layouts/trackers'
